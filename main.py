@@ -8,7 +8,7 @@ base_url = "https://newsapi.org/v2/top-headlines"
 
 params = {"category":topic if topic else "latest",
           "language":"en",
-          "apiKey":<YOUR API KEY>"}
+          "apiKey":"7810f07a9ee941ee818591fdfaff67c9"}
 
 if st.button("Get News"):
     response = requests.get(base_url,params=params)
