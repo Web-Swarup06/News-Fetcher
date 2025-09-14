@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 st.header("What's news you wanna know about?")
-topic = st.selectbox("Category",['business','entertainment','general','health','science','sports','technology'])
+topic = st.selectbox("Category",['business','entertainment','general','health','science','sports','technology'],index=0)
 
 base_url = "https://newsapi.org/v2/top-headlines"
 
